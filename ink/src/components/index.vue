@@ -1,14 +1,22 @@
 <template>
-  <h1>测试主页</h1>
+  <div>
+    <new-header></new-header>
+    <h1>测试主页</h1>
+    <span></span>
+  </div>
 </template>
 
 <script>
+
+  import  NewHeader from  '@/components/header';
 export default {
-  name: 'index',
   data () {
-    /*return {
-      msg: 'Welcome to Your Vue.js App'
-    }*/
+    return {
+      msg: 'Welcome to Your Vue.js App',
+    }
+  },
+  components:{
+    NewHeader,
   }
 }
 </script>
